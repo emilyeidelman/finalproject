@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trivia</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <script src="js/script.js"></script>
+  </head>
+
+
+    <body id="trivia">
+
+        <div id="header" class="container">
+
+            <h1>The History of Music in Chicago</h1>
+              <nav id="nav">
+                  <ul>
+                      <li><a href="index.html">Homepage</a></li>
+                      <li><a href="timeline.html">Timeline</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                  </ul>
+              </nav>
+
+          </div>
+
+          <section>
+
+          <h2>So you think you know all about the history of Chicago's music?</h2>
+          <h3>Test your knowledge here!</h3>
+
+          <form name="quiz">
+              <ol>
+                <li>1. Chicago is often known for which genre of music?</li>
+                  <ul>
+                    <li><input type="radio" name="q1" value="correct">Blues</input></li>
+                    <li><input type="radio" name="q1" value="incorrect">Classical</input></li>
+                    <li><input type="radio" name="q1" value="incorrect">Country</input></li>
+                  </ul>
+
+                  <li>2. Who is the rapper from Chicago who's sold more than 21 million albums and 100 million digital downloads?</li>
+                  <ul>
+                    <li><input type="radio" name="q2" value="incorrect">Chance the Rapper</input></li>
+                    <li><input type="radio" name="q2" value="correct">Kanye West</input></li>
+                    <li><input type="radio" name="q2" value="incorrect">Lupe Fiasco</input></li>
+                  </ul>
+
+                <li>3. Which of these venues is in Chicago?</li>
+                  <ul>
+                    <li><input type="radio" name="q3" value="incorrect">Madison Square Garden</input></li>
+                    <li><input type="radio" name="q3" value="incorrect">The Fillmore</input></li>
+                    <li><input type="radio" name="q3" value="correct">The Aragon Ballroom</input></li>
+                  </ul>
+
+                  <li>4. When did Mavis Staples win her first Grammy?</li>
+                    <ul>
+                      <li><input type="radio" name="q4" value="incorrect">1991</input></li>
+                      <li><input type="radio" name="q4" value="incorrect">2001</input></li>
+                      <li><input type="radio" name="q4" value="correct">2011</input></li>
+                    </ul>
+              </ol>
+
+              <input type="button" value="submit" onClick="checkAll()"></input>
+              <input type="reset" value="clear"></input>
+              <textarea rows="6" cols="60" name="answers">The correct answers will be displayed here!</textarea>
+
+
+          </form>
+
+</section>
+
+        </body>
+
+        </html>

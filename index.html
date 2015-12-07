@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body id="home">
+    <div id="container">
+      <div id="header">
+
+        <h1>The History of Music in Chicago</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+            </ul>
+        </nav>
+
+      </div>
+
+      <div id="mainpage">
+        <p>Chicago is home to many types of music. From the blues to modern rap, listeners around the world are familiar with the sounds of the city. Want to learn more about the music history? You've come to the right place.</p>
+      </div>
+      <div id="button">
+        <p><a href="timeline.html" class="button">Learn More</a></p>
+      </div>
+    </div>
+
+    <script>
+      var windowHeight = window.innerHeight / 9;
+      console.log(windowHeight);
+
+      var main = document.getElementById("mainpage");
+      var mainHeight = main.clientHeight;
+      console.log(mainHeight);
+
+      console.log(windowHeight - main.clientHeight);
+      main.setAttribute("style", "margin-top:" + (windowHeight - main.clientHeight) + "px;");
+      // var mainWidth = main.clientWidth;
+      // main.setAttribute("style", "top:" + (windowHeight - mainHeight) + "px; width:" + mainWidth + "px;");
+
+      var windowHeight = window.innerHeight / 1.45;
+      console.log(windowHeight);
+
+      var main = document.getElementById("button");
+      var mainHeight = main.clientHeight;
+      console.log(mainHeight);
+
+      console.log(windowHeight - main.clientHeight);
+      main.setAttribute("style", "margin-top:" + (windowHeight - main.clientHeight) + "px;");
+      // var mainWidth = main.clientWidth;
+      // main.setAttribute("style", "top:" + (windowHeight - mainHeight) + "px; width:" + mainWidth + "px;");
+    </script>
+  </body>
+</html>

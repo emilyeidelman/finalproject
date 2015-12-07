@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chicago Music History</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
+    <script src="js/script.js"></script>
+
+<body id="gallery">
+  <div id="header" class="container">
+
+      <h1>The History of Music in Chicago</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+            </ul>
+        </nav>
+
+        <div id="images">
+          <div class="Collage">
+
+          </div>
+          <p id="img_cont">
+    <div class="grid-block fade">
+    	<div class="caption">
+            <h3>Cheap Trick</h3>
+            <p>Cheap Trick performing in Charlotte, North Caroline in 1978.</p>
+        </div>
+    	<img id="cheaptrick" src="galleryimages/cheaptrick.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Chicago</h3>
+            <p>Guitarist Jason Scheff playing in 2003.</p>
+        </div>
+      <img id="chicago" src="galleryimages/chicago.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Curtis Mayfield</h3>
+            <p>Curtis Mayfield posing in 1972.</p>
+        </div>
+      <img id="curtis" src="galleryimages/curtismayfield.jpg" width="300" height="300"/>
+    </div>
+</p>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Fall Out Boy</h3>
+            <p>Fall Out Boy performing in Virginia Beach in 2014.</p>
+        </div>
+      <img id="fall" src="galleryimages/falloutboy.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Kanye West</h3>
+            <p>Kanye West performing in Germany in 2011.</p>
+        </div>
+      <img id="kanye" src="galleryimages/kanyewest.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Mavis Staples</h3>
+            <p>Mavis Staples performing at the Chicago Blues Festival in 2012.</p>
+        </div>
+      <img id="mavis" src="galleryimages/mavisstaples.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Nat King Cole</h3>
+            <p>Nat King Cole playing the piano in New York in 1947.</p>
+        </div>
+      <img id="nat" src="galleryimages/natkingcole.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Smashing Pumpkins</h3>
+            <p>The Smashing Pumpkins playing in Barcelona in 2007.</p>
+        </div>
+      <img id="smashing" src="galleryimages/smashingpumpkins.jpg" width="300" height="300"/>
+    </div>
+
+    <div class="grid-block fade">
+      <div class="caption">
+            <h3>Wilco</h3>
+            <p>Wilco performing at Paradiso festival in Amsterdam in 2009.</p>
+        </div>
+      <img id="wilco" src="galleryimages/wilco.jpg" width="300" height="300"/>
+    </div>
+  </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.standard').hover(
+		function(){
+			$(this).find('.caption').show();
+		},
+		function(){
+			$(this).find('.caption').hide();
+		}
+	);
+	$('.fade').hover(
+		function(){
+			$(this).find('.caption').fadeIn(250);
+		},
+		function(){
+			$(this).find('.caption').fadeOut(250);
+		}
+	);
+	$('.slide').hover(
+		function(){
+			$(this).find('.caption').slideDown(250);
+		},
+		function(){
+			$(this).find('.caption').slideUp(250);
+		}
+	);
+});
+</script>
+</body>
+
+
+</html>
